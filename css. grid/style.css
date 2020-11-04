@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template-columns:300px auto 300px;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aleft section aright"
+    "footer footer footer"
+    ;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: violet;
+    grid-area: header;
+}
+
+nav{
+    background-color: blue;
+    grid-area: nav;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+aside{
+    background-color: yellow;
+}
+
+aside#aleft{
+    grid-area: aleft;
+}
+
+aside#aright{
+    grid-area: aright;
+}
+
+section{
+    background-color: grey;
+    grid-area: section;
+}
+
+footer{
+    background-color: green;
+    grid-area: footer;
+}
